@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="search-section">
+        <div id="main-container">
+            <label id="search-label" for="search-input">RPG Creature Search</label>
+            <span id="form-container">
+                <input type="text" id="search-input" required placeholder="Creature Name or ID">
+                <button type="button" id="search-button">SEARCH</button>
+            </span>
+            <div id="display-container">
+                <span class="horizontal-join">
+                    <h1 id="creature-name"></h1>
+                    <span id="creature-id"></span>
+                </span>
+                <span class="horizontal-join">
+                    <p id="weight"></p>
+                    <p id="height"></p>
+                </span>
+                <span class="horizontal-join">
+                    <div id="types">
+                    </div>
+                </span>
+                <span>
+                    <h2 id="special"></h2>
+                    <p id="special-desc"></p>
+                </span>
+            </div>
+            <div id="stats-container">
+                <table id="stats-table">
+                    <th>
+                        <tr id="header">
+                            <td>BASE</td>
+                            <td>STATS</td>
+                        </tr>
+                    </th>
+                    <tr>
+                        <td>HP:</td>
+                        <td id="hp"></td>
+                    </tr>
+                    <tr>
+                        <td>Attack:</td>
+                        <td id="attack"></td>
+                    </tr>
+                    <tr>
+                        <td>Defense:</td>
+                        <td id="defense"></td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Attack:</td>
+                        <td id="special-attack"></td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Defense:</td>
+                        <td id="special-defense"></td>
+                    </tr>
+                    <tr>
+                        <td>Speed:</td>
+                        <td id="speed"></td>
+                    </tr>
+                </table>
+            </div>
+
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
